@@ -1,0 +1,251 @@
+*{
+  font-family: 'Manrope', sans-serif;
+  margin: 0; 
+  padding: 0;
+}
+.banner_text h1{
+  font-size: 80px;
+}
+#banner{
+  background: url(Image/trees.jpg) ;
+  background-size: cover ;
+  background-position: center;
+}
+#logo{
+  width: 150px;
+  margin-top: 20px;
+}
+.banner_text{
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+}
+.banner_text p{
+  font-size: 40px;
+}
+.banner_button {
+  text-align: center;
+  padding: 20px 0px;
+  
+  /* background-color: green; */
+  /* position: absolute;
+  top: 100px; */
+}
+.banner_button a{
+  text-decoration: none;
+  width: 200px;
+  display: inline-block;
+  color: white;
+  background-color: #7AD988;
+  padding: 20px 0px;
+  font-size: 20px;
+  position: relative;
+  border: 2px dashed black;
+  z-index: 1;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.banner_button a span {
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  transition: 0.5s;
+} 
+.banner_button a:hover span{
+  width:100%;
+}
+
+.banner_button a:hover {
+  color: black;
+}
+
+.title-text{
+  text-align:center;
+  padding: 20px 0px;
+}
+.title-text h3{
+  font-size: 40px;
+}
+.title-text h1{
+  font-size: 30px;
+  color:#6B9D70;
+}
+
+.contents{
+  margin: 30px 30px;
+  background: linear-gradient(#AEE5B4, #E3F1E5)
+}
+
+.feature-box{
+  width:80%;
+  text-align: center;
+  display:flex; 
+  /* background: red; */
+  flex-wrap:wrap;
+  margin:auto;
+  /* margin-bottom:10px; */
+}
+.features{
+  flex-basis: 50%;
+  /* background:green; */
+  margin: auto;
+}
+.feature-image{
+  flex-basis:50%;
+  margin: auto;
+  /* background:yellow; */
+}
+.feature-image img{
+  width: 80%;
+  height:300px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.feature-icons span{
+  font-size: 27px;
+  color:#6B9D70;
+}
+.feature-icons {
+  padding-bottom: 20px;
+}
+.feature-icons .fa-leaf {
+  line-height: 50px;
+  /* background-color: red; */
+  border-radius: 10px;
+  border: 2px solid #6B9D70;
+  width:50px;
+  height:50px;
+  margin-right: 10px;
+} 
+#features{
+  background-color: #E2F1E4;
+  margin-bottom:0;
+}
+
+#impact-on-environment{
+  width:100%;
+  background-color: #D4DDD5;
+}
+
+.impact-on-environment-box{
+  width:80%;
+  display:flex;
+  /* background-color: yellow; */
+  /* text-align:center; */
+  margin:auto;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+}
+
+.single-impact{
+  flex-basis: 40%;
+  /* background-color:red; */
+  margin: 30px 0px;
+  height:300px;
+  /* width: 500px; */
+}
+
+.single-impact img{
+  width: 100%;
+  height:300px;
+  border-radius: 10px;
+  /* z-index:-1; */
+}
+
+.overlay{
+  background:linear-gradient(rgba(204, 248, 207,0.3), rgba(232,241,233,0.3));
+  width: 100%;
+  height: 100%;
+  margin-top:-300px;
+  /* z-index:1; */
+  position: relative;
+  border-radius: 15px;
+  opacity: 0;
+}
+
+.impact-description{
+  position:relative;
+  /* background-color: blue; */
+  /* top: 0%; */
+  bottom: 0%;
+  margin-top:-20px;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  opacity: 0;
+  transition:bottom 0.5s;
+}
+
+.single-impact:hover .overlay{
+  opacity: 1;
+}
+.single-impact:hover .impact-description{
+  opacity: 1;
+  bottom: 80%;
+}
+
+.testimonial-row{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  /* background-color: red; */
+  justify-content: space-evenly;
+}
+
+.testimonial-column{
+  flex-basis: 28%;
+  /* background-color: yellow; */
+  /* border: 2px solid black; */
+  margin: 10px 0px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #6B9D70;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+#testimonial{
+  padding: 20px 0px;
+}
+
+.user img{
+  width:40px;
+  height: 40px;
+  border-radius: 5px;
+}
+.user-info .fab{
+  color:#1DA1F2;
+}
+
+.testimonial-column p{
+  font-size: 15px;
+}
+
+small{
+  color:#1DA1F2;
+}
+
+.testimonial-column:hover{
+  transform: translateY(-20px);
+}
+
+#footer{
+  background-color: #CAF1C7;
+  padding: 20px;
+}
+.footer-row{
+  display: flex;
+  width: 80%;
+  justify-content: space-between; 
+  margin: auto;
+}
+#footer-image{
+  width: 300px;
+  position: absolute;
+  left: 38%;
+  opacity: 0.4;
+}
